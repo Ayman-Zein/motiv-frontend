@@ -4,6 +4,8 @@ import Error from "@pages/Error";
 import Dashboard from "@pages/Dashboard";
 import Cars from "@pages/Cars";
 import MainLayout from "@layouts/MainLayout";
+import Login from "@pages/Login";
+import Settings from "@pages/Settings";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
       {
         path: "cars",
         element: <Cars />,
+      },
+      {
+        path: "settings",
+        element: <Settings />,
+      },
+      {
+        path: "login",
+        element: <Login />,
       },
     ],
   },

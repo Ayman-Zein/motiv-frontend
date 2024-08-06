@@ -7,7 +7,7 @@ export type TCar = {
   seats: number;
   transmission: string;
   fuelType: string;
-  pricePerDay: number;
+  pricePerHour: number;
   imageUrl: string;
   kilometersAge: number;
   recommendationPercentage: number;

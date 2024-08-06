@@ -1,5 +1,11 @@
+import Heading from "@components/ui/Heading";
+
 const Cars = () => {
-  return <div>Cars</div>;
+  return (
+    <div>
+      <Heading text="Booking" />
+    </div>
+  );
 };
 
 export default Cars;

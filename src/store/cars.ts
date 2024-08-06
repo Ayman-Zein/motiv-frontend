@@ -7,12 +7,20 @@ export const carsApi = createApi({
     baseUrl: "http://localhost:3004/",
   }),
   endpoints: (builder) => ({
-    getCars: builder.query<TCar[], { make?: string; isRecommended?: boolean }>({
+    getCars: builder.query<
+      TCar[],
+      {
+        make?: string;
+        isRecommended?: boolean;
+        _page?: number;
+        _limit?: number;
+      }
+    >({
       query: (args) => {
-        const { make, isRecommended } = args;
+        const { make, isRecommended, _page, _limit } = args;
         return {
           url: "cars",
-          params: { make, isRecommended },
+          params: { make, isRecommended, _page, _limit },
         };
       },
     }),

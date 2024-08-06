@@ -1,22 +1,14 @@
-import { useGetCarsQuery } from "@store/cars";
+import BannerItems from "@components/dashboard/banners/BannerItems";
+import CarsList from "@components/dashboard/recommend/CarsList";
+import StatsList from "@components/dashboard/Statistics/StatsList";
 
 const Dashboard = () => {
-  const { data, isLoading, error } = useGetCarsQuery({
-    isRecommended: true,
-    make: "Toyota",
-  });
-  if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Error</div>;
   return (
-    <div>
-      {data?.map((car) => (
-        <div key={car.id}>
-          <h2>
-            {car.make} {car.model}
-          </h2>
-        </div>
-      ))}
-    </div>
+    <>
+      <StatsList />
+      <BannerItems />
+      <CarsList />
+    </>
   );
 };
 

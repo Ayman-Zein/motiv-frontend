@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const SideNav = () => {
   return (
-    <div className="w-16 md:w-[248px] bg-white h-full nav-height px-3 pt-6 flex flex-col justify-between">
+    <nav className="w-16 md:w-[248px] bg-white h-full nav-height px-3 pt-6 flex flex-col justify-between">
       <div className="flex flex-col">
         <NavLink
           to="/"
@@ -62,7 +62,7 @@ const SideNav = () => {
           </span>
         </NavLink>
       </div>
-    </div>
+    </nav>
   );
 };
 

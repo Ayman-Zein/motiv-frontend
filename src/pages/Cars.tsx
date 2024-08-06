@@ -1,10 +1,14 @@
+import BookingCarsList from "@components/cars/BookingCarsList";
+import Filtration from "@components/cars/Filtration";
 import Heading from "@components/ui/Heading";
 
 const Cars = () => {
   return (
-    <div>
+    <>
       <Heading text="Booking" />
-    </div>
+      <Filtration />
+      <BookingCarsList />
+    </>
   );
 };
 

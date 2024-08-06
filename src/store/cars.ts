@@ -14,13 +14,14 @@ export const carsApi = createApi({
         isRecommended?: boolean;
         _page?: number;
         _limit?: number;
+        transmission?: string;
       }
     >({
       query: (args) => {
-        const { make, isRecommended, _page, _limit } = args;
+        const { make, isRecommended, transmission, _page, _limit } = args;
         return {
           url: "cars",
-          params: { make, isRecommended, _page, _limit },
+          params: { make, isRecommended, _page, _limit, transmission },
         };
       },
     }),

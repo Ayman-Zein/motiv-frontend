@@ -1,15 +1,18 @@
-import { Footer } from "@components/layout/Footer";
 import Header from "@components/layout/Header";
+import SideNav from "@components/layout/SideNav";
 import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="h-screen">
       <Header />
-      <div>
-        <Outlet />
+      <div className="flex">
+        <SideNav />
+        <div>
+          <Outlet />
+        </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

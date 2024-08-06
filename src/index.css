@@ -8,3 +8,6 @@ html,
 body {
   font-family: "DM Sans", sans-serif;
 }
+.nav-height {
+  height: calc(100vh - 80px);
+}

@@ -12,4 +12,6 @@ export type TCar = {
   kilometersAge: number;
   recommendationPercentage: number;
   isRecommended: boolean;
+  pricePerDay: number;
+  isLiked: boolean;
 };

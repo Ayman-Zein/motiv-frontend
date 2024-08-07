@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next";
 import { IoCarOutline, IoSettingsOutline } from "react-icons/io5";
 import { RxDashboard } from "react-icons/rx";
 import { TbLogout2 } from "react-icons/tb";
 import { NavLink } from "react-router-dom";
 
 const SideNav = () => {
+  const { t } = useTranslation();
   return (
     <nav className="w-16 md:w-[248px] bg-white h-full nav-height px-3 pt-6 flex flex-col justify-between">
       <div className="flex flex-col">
@@ -17,7 +19,7 @@ const SideNav = () => {
         >
           <RxDashboard size={20} className="text-[##72767C]" />
           <span className="font-sans font-medium text-sm text-[#5F6165] hidden text-center md:block">
-            Dashboard
+            {t("Dashboard")}
           </span>
         </NavLink>
         <NavLink
@@ -30,7 +32,7 @@ const SideNav = () => {
         >
           <IoCarOutline size={20} className="text-[##72767C]" />
           <span className="font-sans font-medium text-sm text-[#5F6165] hidden text-center md:block">
-            Cars
+            {t("Cars")}
           </span>
         </NavLink>
       </div>
@@ -45,7 +47,7 @@ const SideNav = () => {
         >
           <IoSettingsOutline size={20} className="text-[##72767C]" />
           <span className="font-sans font-medium text-sm text-[#5F6165] hidden text-center md:block">
-            Settings
+            {t("Settings")}
           </span>
         </NavLink>
         <NavLink
@@ -58,7 +60,7 @@ const SideNav = () => {
         >
           <TbLogout2 size={20} className="text-[##72767C]" />
           <span className="font-sans font-medium text-sm text-[#5F6165] hidden text-center md:block">
-            Log Out
+            {t("LogOut")}
           </span>
         </NavLink>
       </div>

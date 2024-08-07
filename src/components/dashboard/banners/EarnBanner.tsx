@@ -16,12 +16,12 @@ const EarnBanner: React.FC<DiscountProps> = ({
       style={{ backgroundColor: bgColor }}
     >
       <div className="flex ">
-        <h2 className="font-abeezee text-[20px] text-white sm-w-5 leading-6">
+        <h2 className="font-abeezee text-[20px] text-white sm:w-5 leading-6">
           {title}
         </h2>
         <div className="lg:w-full justify-end md:flex  hidden">{Icon}</div>
       </div>
-      <div className="">
+      <div>
         <h3
           className="font-abeezee italic text-[40px] relative md:top-[-15px] leading-10"
           style={{ color: mainColor }}

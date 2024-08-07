@@ -47,7 +47,7 @@ const Filtration = () => {
           onChange={handleTransmissionChange}
         />
       </div>
-      <div className="mt-2 sm:mt-0 sm:ml-auto flex gap-4">
+      <div className="mt-2 sm:mt-0 sm:ml-auto rtl:sm:mr-auto rtl:sm:ml-0 flex gap-4">
         <IconRounded bgColor="white" icon={<Dashboard />} />
         <IconRounded bgColor="#A162F7" icon={<Filter />} />
       </div>

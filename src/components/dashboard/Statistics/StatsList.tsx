@@ -5,32 +5,35 @@ import Drop from "@assets/icons/drop.svg?react";
 import Coin from "@assets/icons/coin.svg?react";
 import StatsCard from "./StatsCard";
 import { StatisticsProps } from "@customTypes/statistic";
+import { useTranslation } from "react-i18next";
 
 const StatsList = () => {
+  const { t } = useTranslation();
+
   const ListItems: StatisticsProps[] = [
     {
-      title: "Energy",
+      title: t("Energy"),
       Icon: <Energy />,
       value: 45,
       bgColor: "#A162F7",
       progressColor: "#A162F7",
     },
     {
-      title: "Range",
+      title: t("Range"),
       Icon: <Arrow />,
       value: 50,
       bgColor: "rgba(255, 126, 134, 0.1)",
       progressColor: "#FF7E86",
     },
     {
-      title: "Break fluid",
+      title: t("BreakFluid"),
       Icon: <Drop />,
       value: 9,
       bgColor: "rgba(161, 98, 247, 0.1)",
       progressColor: "#A162F7",
     },
     {
-      title: "Tire Wear",
+      title: t("TireWear"),
       Icon: <Coin />,
       value: 25,
       bgColor: "rgba(246, 204, 13, 0.1)",

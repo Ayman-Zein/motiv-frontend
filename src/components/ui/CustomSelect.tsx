@@ -34,7 +34,7 @@ const CustomSelect = ({ options, onChange }: CustomSelectProps) => {
           </option>
         ))}
       </select>
-      <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+      <div className="absolute inset-y-0 right-0 rtl:left-0 rtl:right-auto flex items-center px-2 pointer-events-none">
         <Rectangle />
       </div>
     </div>

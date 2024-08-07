@@ -18,7 +18,11 @@ const CarCard = ({ item }: { item: TCar }) => {
           {item.recommendationPercentage} % Recommend
         </h2>
       </div>
-      <img src={`src/assets/images/cars/${item.imageUrl}`} alt="car image" />
+      <img
+        src={`src/assets/images/cars/${item.imageUrl}`}
+        alt="car image"
+        className=" xl:w-fit"
+      />
       <h3 className="font-sans font-bold text-[#1F2128] text-xl mt-2">
         {item.model}
       </h3>
@@ -31,7 +35,7 @@ const CarCard = ({ item }: { item: TCar }) => {
           <Setting />
           <Energy />
         </div>
-        <div className="ml-auto font-medium text-sm text-[#72767C]">
+        <div className="ml-auto rtl:mr-auto rtl:ml-0 font-medium text-sm text-[#72767C]">
           ${item.pricePerHour}/h
         </div>
       </div>

@@ -12,9 +12,9 @@ const BookingCarCard = ({ item }: { item: TCar }) => {
           {item.model}
         </h2>
         {item.isLiked ? (
-          <Liked className="ml-auto" />
+          <Liked className="ml-auto rtl:mr-auto rtl:ml-0" />
         ) : (
-          <Like className="ml-auto" />
+          <Like className="ml-auto rtl:mr-auto rtl:ml-0" />
         )}
       </div>
       <span className="font-sans font-normal text-base text-[#72767C]">
@@ -35,7 +35,7 @@ const BookingCarCard = ({ item }: { item: TCar }) => {
             {item.transmission}
           </span>
         </div>
-        <div className="ml-auto font-medium text-sm text-[#72767C]">
+        <div className="ml-auto rtl:mr-auto rtl:ml-0 font-medium text-sm text-[#72767C]">
           ${item.pricePerDay}/d
         </div>
       </div>

@@ -8,7 +8,7 @@ const MainLayout = () => {
       <Header />
       <div className="flex">
         <SideNav />
-        <main className="pt-6 px-4 page-height overflow-y-auto w-full">
+        <main className="py-6 px-4 page-height overflow-y-auto w-full">
           <Outlet />
         </main>
       </div>

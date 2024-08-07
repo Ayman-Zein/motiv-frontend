@@ -9,7 +9,7 @@ const StatsCard: React.FC<StatisticsProps> = ({
   progressColor,
 }) => {
   return (
-    <div className="flex justify-center items-center flex-col bg-white py-5 px-14 min-w-full sm:min-w-[266px] rounded-xl">
+    <div className="flex justify-center items-center flex-col bg-white py-5 px-14 min-w-full sm:min-w-[266px] lg:w-[24%] rounded-xl">
       {Icon}
       <h2 className="font-sans font-bold text-[28px] mt-2 mb-5"> {title}</h2>
       <CircularProgress value={value} pathColor={progressColor} />
